@@ -27,13 +27,14 @@
 }
 
 .button {
-  border: none;
+  border-color: #eee;
   cursor: pointer;
   color: #333;
   background: transparent;
   font-size: 1rem;
   padding: 0 1rem;
   overflow: hidden;
+  
 }
 
 .button:focus ,
