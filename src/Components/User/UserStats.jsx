@@ -4,7 +4,7 @@ import useFecth from '../../Hooks/useFecth';
 import Head from '../Helper/Head';
 import Loading from '../Helper/Loading';
 import Error from '../Helper/Error';
-import { UserStatsGraphs } from './UserStatsGraphs';
+import UserStatsGraphs from './UserStatsGraphs';
 
 const UserStats = () => {
   const { loading, data, error, request } = useFecth();
