@@ -1,7 +1,5 @@
 import React from 'react';
-import { TOKEN_POST } from './Api';
-import { TOKEN_VALIDATE_POST } from './Api';
-import { USER_GET } from './Api';
+import { TOKEN_POST, TOKEN_VALIDATE_POST, USER_GET } from './Api';
 import { useNavigate } from 'react-router-dom';
 
 export const UserContext = React.createContext();
@@ -39,7 +37,7 @@ export const UserStorage = ({ children }) => {
       setLoading(true);
       const { url, options } = TOKEN_POST({ username, password });
       const tokenRes = await fetch(url, options);
-      if (!tokenRes.ok) throw new Error(`Error: Usuário não encontrado`);
+      if (!tokenRes.ok) throw new Error(`Error: ${tokenRes.statusText}`);
       const { token } = await tokenRes.json();
       window.localStorage.setItem('token', token);
       await getUser(token);
@@ -51,6 +49,7 @@ export const UserStorage = ({ children }) => {
       setLoading(false);
     }
   }
+
   React.useEffect(() => {
     async function autoLogin() {
       const token = window.localStorage.getItem('token');
