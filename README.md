@@ -17,9 +17,9 @@ https://user-images.githubusercontent.com/108480175/227060144-7669f9e9-56bc-409b
 
 
 
-<h1 align="center" height="100px" width="50px"><img src="./src/Readme/Readme.jpg" alt="Bikcraft"><img src="./src/Readme/Readme 1.jpg" alt="Bikcraft"></h1>
+<h1 align="center" gap="30px"><img src="./src/Readme/Readme.jpg" alt="Dogs" width="300px" margin="20px">   <img src="./src/Readme/Readme 1.jpg" alt="Dogs" width="300px">   <img src="./src/Readme/Readme 2.jpg" alt="Dogs" width="300px"></h1>
 
-<h1><img src="./src/Readme/Readme 2.jpg" alt="Bikcraft"></h1>
+
 
 
 
